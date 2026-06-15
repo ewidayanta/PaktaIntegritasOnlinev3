@@ -1,0 +1,10 @@
+{
+  "name": "Remix: Remix: Pakta Integritas Online v3",
+  "description": "Platform digital untuk pengisian dan penandatanganan Pakta Integritas dengan verifikasi selfie dan timestamp otomatis.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

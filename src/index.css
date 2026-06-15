@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  
+  --color-kemenkeu-navy: #1e3a8a;
+  --color-kemenkeu-gold: #ffc000;
+  --color-kemenkeu-gold-dark: #e6ac00;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+  }
+}
+
+.cert-border {
+  border: 12px solid #FFFFFF;
+  outline: 1px solid #E2E8F0;
+  position: relative;
+}
+
+@media (min-width: 640px) {
+  .cert-border {
+    border-width: 20px;
+  }
+}
+
+.cert-corner {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 2px solid theme('colors.kemenkeu-navy');
+}
+
+@media (min-width: 640px) {
+  .cert-corner {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.top-left { top: -6px; left: -6px; border-right: 0; border-bottom: 0; }
+.top-right { top: -6px; right: -6px; border-left: 0; border-bottom: 0; }
+.bottom-left { bottom: -6px; left: -6px; border-right: 0; border-top: 0; }
+.bottom-right { bottom: -6px; right: -6px; border-left: 0; border-top: 0; }
+
+@media (min-width: 640px) {
+  .top-left { top: -10px; left: -10px; }
+  .top-right { top: -10px; right: -10px; }
+  .bottom-left { bottom: -10px; left: -10px; }
+  .bottom-right { bottom: -10px; right: -10px; }
+}
